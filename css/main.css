@@ -1,14 +1,4 @@
-/* VARIABLES */
-:root {
-  --light-background: #f2ece4;
-  --light-text: #036;
-  /* --main-text-color : #fff; */
-  /* --main-bg-color : #fff; */
-  /* --main-font-size : 16px; */
-  /* --main-line-height : 1.5; */
-}
-
-/* MIXINS */ /**
+/* VARIABLES */ /* MIXINS */ /**
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
@@ -318,7 +308,35 @@ template {
   display: none;
 }
 
-/* FONTS */ /* GENERAL */
+/* FONTS */
+@font-face {
+  font-family: "Poppins";
+  font-weight: 500;
+  src: url("../fonts/poppins-v20-latin-500.woff2") format("woff2"), url("../fonts/poppins-v20-latin-500.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* poppins-600 - latin */
+@font-face {
+  font-family: "Poppins", "Arial", sans-serif;
+  font-weight: 600;
+  src: url("../fonts/poppins-v20-latin-600.woff2") format("woff2"), url("../fonts/poppins-v20-latin-600.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* poppins-700 - latin */
+@font-face {
+  font-family: "Poppins", "Arial", sans-serif;
+  font-weight: 700;
+  src: url("../fonts/poppins-v20-latin-700.woff2") format("woff2"), url("../fonts/poppins-v20-latin-700.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* open-sans-regular - latin */
+@font-face {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: 400;
+  src: url("../fonts/open-sans-v34-latin-regular.woff2") format("woff2"), url("../fonts/open-sans-v34-latin-regular.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* GENERAL */
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -352,10 +370,8 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
-  /* font-family: "Roboto", "Arial", sans-serif; */
-  /* font-size: 16px; */
-  /* font-weight: 400; */
-  /* line-height: var(--main-line-height); */
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: 400;
 }
 
 /* STICKY-FOOTER */
@@ -383,7 +399,44 @@ body {
 /* CONTAINER */
 .container {
   width: 100%;
-  max-width: 1240px;
+  max-width: 1210px;
   margin: 0 auto;
   padding: 0 20px;
+}
+
+/* FOOTER PART */
+.site-footer {
+  padding: 64px 0;
+}
+
+.site-footer__title {
+  font-family: "Poppins", "Arial", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  color: #151515;
+}
+
+.site-footer__link {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #6A983C;
+}
+
+.site-footer__tags {
+  font-family: "Poppins", "Arial", sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  color: #151515;
+}
+
+.site-footer__about {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #151515;
 }/*# sourceMappingURL=main.css.map */
