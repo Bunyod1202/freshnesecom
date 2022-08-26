@@ -52,6 +52,12 @@ height: 42px;
     &:focus {
       box-shadow: 0 0 0 0 transparent;
     }
+    &::placeholder {
+      font-weight: 400;
+font-size: 14px;
+line-height: 19px;
+color: #A9A9A9;
+    }
   }
   .btn-search {
     border: none;
@@ -98,11 +104,16 @@ color: #FFFFFF;
     width: auto;
     background-color: transparent;
     border: none;
+  padding-left: 0;
+  padding-right: 30px;
+    font-weight: 500;
+font-size: 15px;
+line-height: 22px;
     &:focus {
       box-shadow: 0 0 0 0 transparent;
     }
     &:not(:last-child) {
-      margin-right: 10px;
+      margin-right: 25px;
     }
   }
  }
