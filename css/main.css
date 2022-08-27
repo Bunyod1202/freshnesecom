@@ -539,7 +539,7 @@ body {
 }
 
 .left_box_card {
-  width: 569px;
+  max-width: 569px;
   height: 436px;
   background: #f9f9f9;
   border-radius: 12px;

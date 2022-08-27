@@ -232,8 +232,8 @@
       <section class="hero">
         <div class="container">
           <div class="hero_inner row">
-            <div class="hero_left_box col-6">
-              <div class="left_box_card">
+            <div class="hero_left_box col-12 col-xl-6 ">
+              <div class="left_box_card m-auto">
                 <div class="left_box_card_info">
                   <a class="box_link badge text-decoration-none" href="#"
                     >-36%</a
@@ -243,13 +243,13 @@
                   >
                 </div>
               </div>
-              <div class="left_box_card my-4"></div>
-              <div class="left_box_card"></div>
+              <div class="left_box_card m-auto my-4"></div>
+              <div class="left_box_card m-auto "></div>
             </div>
-            <div class="hero_right_box col-6">
+            <div class="hero_right_box mt-5 mt-xl-0 col-12 col-xl-6">
               <div class="right_box_head">
                 <a href="#" class="right_box_logo"
-                  ><img src="./images/detail_logo.svg" alt="hero logo"
+                  ><img class="w-75" src="./images/detail_logo.svg" alt="hero logo"
                 /></a>
                 <div class="right_box_rate">
                   <input type="radio" id="star5" name="rate" value="5" />
@@ -272,7 +272,8 @@
                   naturally.
                 </p>
               </div>
-              <div class="right_box_tables d-flex">
+              <div class=" d-flex flex-column flex-md-row align-items-start">
+               <div class="right_box_tables d-flex">
                 <ul class="tables_left list-unstyled">
                   <li class="tables_left_item text-secondary">SKU:</li>
                   <li class="tables_left_item text-secondary my-2">
@@ -281,7 +282,7 @@
                   <li class="tables_left_item text-secondary mb-2">Stock:</li>
                   <li class="tables_left_item text-secondary">Farm</li>
                 </ul>
-                <ul class="tables_left list-unstyled ms-5">
+                <ul class="tables_left list-unstyled ms-5 ms-md-5 ">
                   <li class="tables_left_item">76645</li>
                   <li class="tables_left_item my-2 text-decoration-underline">
                     Vegetables
@@ -293,7 +294,8 @@
                   </li>
                   <li class="tables_left_item">Grocery Tarm Fields</li>
                 </ul>
-                <div class="tables_right ms-4 d-flex">
+               </div>
+                <div class="tables_right right_box_tables ms-0 ms-md-4 d-flex  align-items-start">
                   <div>
                     <ul class="tables_left list-unstyled">
                       <li class="tables_left_item text-secondary">
@@ -311,7 +313,7 @@
                     </ul>
                   </div>
 
-                  <div class="ms-5">
+                  <div class="ms-4 ms-md-5">
                     <ul class="tables_left list-unstyled">
                       <li class="tables_left_item">1 days old</li>
                       <li class="tables_left_item my-2">pcs, kgs, box, pack</li>
@@ -322,7 +324,7 @@
                 </div>
               </div>
               <div
-                class="price_rate d-flex align-items-center justify-content-between"
+                class="price_rate d-flex flex-column flex-sm-row align-items-center justify-content-between"
               >
                 <div class="price_box">
                   <p class="green-number">36.23 USD</p>
@@ -350,7 +352,7 @@
                   </button>
                 </div>
               </div>
-              <div class="right_box_mark d-flex">
+              <div class="right_box_mark d-flex flex-column flex-sm-row">
                 <div class="mark_item">
                   <p class="marked_text marked_text1">Add to my wish list</p>
                 </div>
@@ -359,16 +361,16 @@
                 </div>
               </div>
               <div class="right_box_badge">
-                <div class="badge_text">
+                <div class="badge_text d-flex flex-column flex-sm-row">
                   <span class="badge_word">Description</span>
-                  <span class="badge_word badge_word_middle"
+                  <span class="badge_word mx-0 mx-sm-5 "
                     >Reviews<span class="badge text-success">18</span></span
                   >
                   <span class="badge_word"
                     >Questions<span class="badge text-success">4</span></span
                   >
                 </div>
-                <div class="badge_line"></div>
+                <div class="badge_line d-none d-sm-block"></div>
               </div>
               <div class="right_box_origin">
                 <h4 class="origin_title">Origins</h4>
@@ -439,9 +441,9 @@
             </div>
             <div class="hero_products">
               <div
-                class="products_head d-flex justify-content-between align-items-center"
+                class="products_head d-flex justify-content-between align-items-center py-3"
               >
-                <p class="products_title">Related products</p>
+                <p class="products_title m-0">Related products</p>
                 <select
                   class="products_select"
                   aria-label="Default select example"
@@ -452,8 +454,8 @@
                   <option value="3">Three</option>
                 </select>
               </div>
-              <div class="products_cards d-flex justify-content-between">
-                <div class="card pt-2" style="width: 18rem">
+              <div class="products_cards d-flex justify-content-center flex-wrap">
+                <div class="card  pt-2 mt-3 mt-sm-0" style="width: 18rem">
                   <div class="card_image m-auto"></div>
                   <div class="card-body">
                     <h5 class="card-title cards_title">Product Title</h5>
@@ -468,7 +470,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="card pt-2" style="width: 18rem">
+                <div class="card ms-1 mt-2 mt-md-0 pt-2" style="width: 18rem">
                   <div class="card_image m-auto"></div>
                   <div class="card-body">
                     <h5 class="card-title cards_title">Product Title</h5>
@@ -483,7 +485,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="card pt-2" style="width: 18rem">
+                <div class="card ms-0 ms-sm-1 mt-2 mt-lg-0 pt-2" style="width: 18rem">
                   <div class="card_image m-auto pt-2">
                     <a class="box_link badge text-decoration-none" href="#"
                       >-36%</a
@@ -502,7 +504,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="card pt-2" style="width: 18rem">
+                <div class="card ms-0 ms-sm-1 pt-2 mt-2 mt-xl-0" style="width: 18rem">
                   <div class="card_image m-auto"></div>
                   <div class="card-body">
                     <h5 class="card-title cards_title">Product Title</h5>
