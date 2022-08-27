@@ -1,0 +1,297 @@
+// Detail page
+.breadcrumb_link {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #a9a9a9;
+}
+.left_box_card {
+  width: 569px;
+  height: 436px;
+  background: #f9f9f9;
+  border-radius: 12px;
+  &_info {
+    padding-top: 16px;
+    padding-left: 16px;
+  }
+}
+.box_link {
+  font-family: "Poppins", "Arial", sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  color: #6a983c;
+  background: #f4f8ec;
+  border-radius: 12px;
+}
+// right box
+.right_box_head {
+  margin-bottom: 60px;
+}
+.right_box_rate {
+  float: left;
+  height: 46px;
+  padding: 0 10px;
+}
+.right_box_rate:not(:checked) > input {
+  position: absolute;
+  top: -9999px;
+}
+.right_box_rate:not(:checked) > label {
+  float: right;
+  width: 1em;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+  font-size: 30px;
+  color: #ccc;
+}
+.right_box_rate:not(:checked) > label:before {
+  content: "★ ";
+}
+.right_box_rate > input:checked ~ label {
+  color: #ffc700;
+}
+.right_box_rate:not(:checked) > label:hover,
+.right_box_rate:not(:checked) > label:hover ~ label {
+  color: #deb217;
+}
+.right_box_rate > input:checked + label:hover,
+.right_box_rate > input:checked + label:hover ~ label,
+.right_box_rate > input:checked ~ label:hover,
+.right_box_rate > input:checked ~ label:hover ~ label,
+.right_box_rate > label:hover ~ input:checked ~ label {
+  color: #c59b08;
+}
+.right_box_info {
+  margin-top: 82px;
+}
+.right_info_desc {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 23px;
+  color: #151515;
+}
+.right_box_tables {
+  margin-top: 40px;
+}
+.tables_left_item {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #151515;
+}
+.price_rate {
+  margin-top: 40px;
+  padding: 4px 16px;
+  border: 1px solid #f5f5f5;
+  border-radius: 12px;
+}
+.price_box {
+  margin-top: 20px;
+}
+.green-number {
+  font-family: "Poppins", "Arial", sans-serif;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 30px;
+  color: #6a983c;
+}
+.grey-number {
+  font-family: "Poppins", "Arial", sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 10px;
+  display: flex;
+  align-items: flex-end;
+  text-decoration-line: line-through;
+  color: #a9a9a9;
+}
+.price_select {
+  width: 131px;
+  &_item {
+    padding: 13px 16px;
+    border-radius: 12px;
+    background: #f9f9f9;
+    border: 1px solid #d1d1d1;
+  }
+}
+.price_btn {
+  padding: 12px 16px;
+  background: #6a983c;
+  border: 2px solid #46760a;
+  border-radius: 12px;
+  font-family: "Poppins", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 22px;
+  color: #ffffff;
+}
+.right_box_mark {
+  margin-top: 30px;
+}
+.mark_item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 25px;
+  font-family: "Poppins", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 22px;
+  color: #151515;
+}
+.marked_text1 {
+  margin-right: 43px;
+  &::before {
+    content: url(../../images/heart.svg);
+    position: absolute;
+    top: 2px;
+    left: 0;
+  }
+}
+.marked_text2 {
+  &::before {
+    content: url(../../images/right_icon.svg);
+    position: absolute;
+    top: 2px;
+    left: 0;
+  }
+}
+.right_box_badge {
+  margin-bottom: 48px;
+  position: relative;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #f5f5f5;
+}
+.badge {
+  margin-left: 8px;
+  background: #f4f8ec;
+  border-radius: 12px;
+  &_word {
+    font-family: "Poppins", "Arial", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    color: #151515;
+    &_middle {
+      margin-right: 90px;
+      margin-left: 95px;
+    }
+  }
+  &_line {
+    width: 163px;
+    height: 1px;
+    position: absolute;
+    top: 43px;
+    left: 0;
+    background-color: #6a983c;
+  }
+}
+.right_box_cook {
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+.origin_title {
+  font-family: "Poppins", "Arial", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  color: #151515;
+}
+.origin_desc {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #151515;
+}
+.vitamins_title {
+  margin-bottom: 23px;
+  font-family: "Poppins", "Arial", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  color: #151515;
+}
+.vitamins_row {
+  background-color: #fdfdfd;
+}
+.table_head {
+  font-family: "Poppins", "Arial", sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  color: #151515;
+}
+.table_data {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #575757;
+}
+// hero products
+.hero_products {
+  margin-top: 16px;
+  padding-top: 70px;
+  padding-bottom: 73px;
+}
+.products_title {
+  font-family: "Poppins", "Arial", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  color: #151515;
+}
+.products_select {
+  border: none;
+  background-color: transparent;
+  font-family: "Poppins", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 22px;
+  color: #151515;
+}
+.card_image {
+  width: 236px;
+  height: 180px;
+  background: #f9f9f9;
+  border-radius: 12px;
+}
+.cards_title {
+  font-family: "Poppins", "Arial", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  color: #151515;
+}
+.cards_desc {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #575757;
+}
+.cards_price {
+  margin-top: 13px;
+  font-family: "Poppins", "Arial", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  color: #151515;
+}
+.cards_btn {
+  padding: 6px 12px;
+  font-family: "Poppins", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 22px;
+  color: #ffffff;
+  background: #6a983c;
+  border: 2px solid #46760a;
+  border-radius: 12px;
+}
