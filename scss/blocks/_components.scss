@@ -589,7 +589,7 @@ border-radius: 12px;
   color:#ccc;
 }
 .rate10:not(:checked) > label:before {
-  content: '★ '
+  content: '★ ';
 }
 .rate10 > input:checked ~ label {
   color: #000;    
@@ -600,10 +600,48 @@ border-radius: 12px;
 }
 .rate10 > input:checked + label:hover,
 .rate10 > input:checked + label:hover ~ label,
-.rate10 > input:checked ~ label:hover,
+.rate01 > input:checked ~ label:hover,
 .rate10 > input:checked ~ label:hover ~ label,
 .rate10 > label:hover ~ input:checked ~ label {
   color: #000;
+}
+.product-title {
+  margin-top: 32px;
+}
+.product-content-title {
+  font-weight: 600;
+font-size: 18px;
+line-height: 27px;
+color: #151515;
+margin-bottom: 4px;
+}
+.product-content-text {
+  font-weight: 400;
+font-size: 12px;
+line-height: 16px;
+color: #575757;
+margin-bottom:10px ;
+} 
+.list-contrnt-item,
+.list-link-item {
+  font-weight: 400;
+font-size: 14px;
+line-height: 19px;
+color: #A9A9A9;
+&:not(:last-child) {
+  margin-bottom: 14px;
+}
+
+}
+.list-link-item {
+  .text-grin {
+    color: #6A983C;
+  }
+}
+.btn-hard {
+  background-color: #F5F5F5;
+  color: #151515;
+  border: none;
 }
 
 }

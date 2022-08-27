@@ -1064,6 +1064,7 @@ body {
   display: inline-block;
   padding: 11px 21px;
   background: #F9F9F9;
+  background: #F9F9F9;
   border: 1px solid #D1D1D1;
   border-radius: 12px;
   font-weight: 400;
@@ -1152,10 +1153,46 @@ body {
 }
 .components-filter .rate10 > input:checked + label:hover,
 .components-filter .rate10 > input:checked + label:hover ~ label,
-.components-filter .rate10 > input:checked ~ label:hover,
+.components-filter .rate01 > input:checked ~ label:hover,
 .components-filter .rate10 > input:checked ~ label:hover ~ label,
 .components-filter .rate10 > label:hover ~ input:checked ~ label {
   color: #000;
+}
+.components-filter .product-title {
+  margin-top: 32px;
+}
+.components-filter .product-content-title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  color: #151515;
+  margin-bottom: 4px;
+}
+.components-filter .product-content-text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #575757;
+  margin-bottom: 10px;
+}
+.components-filter .list-contrnt-item,
+.components-filter .list-link-item {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #A9A9A9;
+}
+.components-filter .list-contrnt-item:not(:last-child),
+.components-filter .list-link-item:not(:last-child) {
+  margin-bottom: 14px;
+}
+.components-filter .list-link-item .text-grin {
+  color: #6A983C;
+}
+.components-filter .btn-hard {
+  background-color: #F5F5F5;
+  color: #151515;
+  border: none;
 }
 
 /* FOOTER PART */
