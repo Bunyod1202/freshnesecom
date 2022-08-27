@@ -6,6 +6,15 @@
       "savePath": "/css"
     }
   ],
+
+  "liveSassCompile.settings.autoprefix": [
+    "last 2 version",
+    "> 1%",
+  ],
+  "liveServer.settings.port": 5501
+}
+
   "liveSassCompile.settings.autoprefix": ["last 2 version", "> 1%"],
   "liveServer.settings.port": 5501
 }
+
