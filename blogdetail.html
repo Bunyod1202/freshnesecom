@@ -5,7 +5,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Template</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Blogdetail</title>
   <link rel="stylesheet" href="./css/bootstrap.min.css">
   <link rel="stylesheet" href="./css/main.css">
 </head>
@@ -57,9 +58,10 @@
           <a class="btn me-5 " href="./contact.html">
             <img src="./images/user.svg" alt="user">
           </a>
-          <button class="btn" type="button">
-            <img src="./images/bascet.svg" alt="bascet">
-          </button>
+          <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+          aria-controls="offcanvasRight">
+          <img src="./images/bascet.svg" alt="bascet">
+        </button>
         </div>
       </div>
     </div>
@@ -123,8 +125,175 @@
 
   <!-- MAIN PART BEGIN  -->
   <main class="site-main">
-    <!-- HERO SECTION BEGIN  -->
-    <!-- HERO SECTION END  -->
+    <section class="hero">
+      <div class="container">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb align-items-center">
+            <li class="breadcrumb-item"><a class="text-decoration-none text-secondary" href="/index.html">Homepage</a></li>
+            <li class="breadcrumb-item"><a class="text-decoration-none text-secondary" href="/blog.html">Fruit and vegetables</a></li>
+            <li class="breadcrumb-item"><a class="text-decoration-none text-black fw-bold" href="/blogdetail.html">Product title</a></li>
+          </ol>
+        </nav>
+          <div class="row bgimage">
+              <div class="col item">
+                  <ul class="list list-unstyled ps-0 m-0">
+                    <li><span class="fw-bold text-secondary me-5">Date:</span><time datetime="2022-08-25" class="text-white fw-bold">2022. 08. 25</time></li>
+                    <li class="pt-2 pb-2"><span class="fw-bold text-secondary me-2">Category:</span> <span class="text-decoration-underline text-white fw-bold">Dinner</span></li>
+                    <li><span class="fw-bold text-secondary me-4">Author:</span> <span class="text-decoration-underline text-white fw-bold">Admin</span></li>
+                  </ul>
+                  <div class="wrapper">
+                    <h2 class="m-0 text-white space">Space for your heading, can be larger so don’t worry - large heading looks better</h2>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <section class="tags">
+    <div class="container">
+      <div class="row tables justify-content-between">
+        <div class="col sticky mb-5">
+          <h2 class="tgslist">Tags</h2>
+          <div class="list">
+            <p class="d-inline-block ps-4 pe-4 pt-2 pb-2 text-success fw-bold bg-light rounded-pill">Food</p>
+            <p class="d-inline-block ps-4 pe-4 pt-2 pb-2 text-success fw-bold bg-light rounded-pill">Reception</p>
+            <p class="d-inline-block ps-4 pe-4 pt-2 pb-2 text-success fw-bold bg-light rounded-pill">Fresh</p>
+            <p class="d-inline-block ps-4 pe-4 pt-2 pb-2 text-success fw-bold bg-light rounded-pill">Vegetable</p>
+            <a class="m-0 mt-4 fw-bold back text-decoration-none d-block text-black" href="/blog.html">Back to Blog</a>
+          </div>
+        </div>
+        <div class="col">
+          <div class="paragraf mb-5">
+            <p class="m-0">There’s nothing like a warm cup of tea to start your morning—or maybe you’re all about an iced hibiscus on a sunny Saturday afternoon. Whether you’re just craving chamomile or are looking to ditch your coffee dependency, here’s our go-to guide on incorporating a few new teas into your daily routine! </p>
+          </div>
+          <div class="paragraf mb-5">
+            <h3 class="m-0 mb-3 ">Morning Ritual // 9:00 AM
+            </h3>
+            <p class="m-0">Want that extra morning energy without the caffeine jitters? Switch out your morning mug of coffee for a warm, energizing cup of earl grey. Serve as is or stir in some milk and honey for extra coziness. If you want to spice things up, try chai tea instead! The combination of cinnamon, cardamom, and ginger smells amazing and gives you that nice little flavor kick to start your day off right.</p>
+          </div>
+
+          <div class="paragraf mb-5">
+            <h3 class="m-0 mb-3">Mid-day Boost // 2:00 PM
+            </h3>
+            <p class="m-0">If you’re feeling a little sluggish post-lunch, beat the afternoon slump with some lemon ginger green tea. Green tea can be a great alternative to coffee in the afternoon when you want that little boost of energy. An added benefit: lemon and ginger work together to aid digestion which is especially helpful after lunch. </p>
+            <br>
+            <p class="m-0 mb-3">If you’re not into hot drinks, opt-in for a fruity iced green tea instead. Steep some honeydew or peach green tea in hot water for a few minutes and then pour over ice until it’s nice and cool. Enjoy with a slice of lemon, and you’ll feel refreshed and ready to tackle any task. </p>
+          </div>
+
+          <div class="paragraf">
+            <h3 class="m-0 mb-3">Evening Calm // 8:00 PM
+            </h3>
+            <p class="m-0 pb-5">Slip on some fuzzy socks, light your favorite candles, and fire up the kettle—it’s time to wind down after a long day. Grab yourself a soothing cup of lavender chamomile tea and indulge in some well-deserved self-love.</p>
+           
+            <div class="links mb-5">
+              <span class="fw-bold">Share</span> &nbsp;&nbsp; 
+              <span class="fw-bold ps-3 pe-3 pt-2 pb-2 bg-light rounded-2"><i class="fa-brands fa-square-facebook"></i> &nbsp; Facebook</span>
+              <span class="fw-bold ps-3 pe-3 pt-2 pb-2 bg-light rounded-2"><i class="fa-brands fa-pinterest"></i> &nbsp;Pinterest</span>
+              <br class="blocks">
+              <span class="fw-bold ps-3 pe-3 pt-2 pb-2 bg-light rounded-2"><i class="fa-brands fa-twitter"></i> Twitter</span>
+              <span class="fw-bold ps-3 pe-3 pt-2 pb-2 bg-light rounded-2"><i class="fa-brands fa-linkedin-in"></i> Linkedin</span>
+            </div>
+          </div>
+          <div class="reply mb-5">
+            <h3 class="m-0 fw-bold mb-1">
+              Leave a reply
+            </h3>
+            <p>Allrady have an account? <span class="text-decoration-underline">Sign in</span> to leave a reply.</p>
+            <form action="https://formsubmit.co/khayitov5670@gmail.com" method="POST" autocomplete="off">
+              <label class="me-5 mb-4">
+                <span class="d-block fw-bold">Name</span>
+                <input type="text" class="form-control" name="Text_name" placeholder="Name" required>
+              </label>  
+              <label class="mb-4">
+                <span class="d-block fw-bold">Email address</span>
+                <input type="email" class="form-control input2" name="Email_adress"  placeholder="Email address" required autocomplete="off">
+              </label>
+              <label class="d-block bg-light ps-3 pt-2 pb-2 rounded-3 mt-1 mb-3">
+                <input class="form-check-input" type="checkbox" aria-label="checkbox" required> &nbsp;&nbsp;
+                <span>Save my name and email in this browser for a next time comment.</span>
+              </label>
+
+              <label class="mb-4">
+                <textarea class="form-control pt-3" rows="4" cols="100" placeholder="Space for your comments" name="Textarea" required></textarea>
+              </label>
+
+              <button type="submit" class="btn btn-success text-white fw-bold ps-4 pe-4 succesbtn">Send a comment</button>
+            </form>
+          </div>
+          <div class="cards">
+
+          <h3 class="m-0 p-0 mb-2 fw-bold size">Comments</h3>
+          <div class="have mb-3">
+            <div class="img-wrap pb-4 d-flex align-items-start">
+              <img class="me-3" src="./images/have.png"
+               width="40"
+                height="40"
+                srcset="./images/have.png 1x, ./images/have@2x.png 2x"
+              alt="Author">
+              <p class="fw-bold m-0 p-0">Author <span class="ms-2 ps-3 pe-3 pt-2 pb-2 bg-light text-success rounded-4">admin</span> <br> <time class="text-secondary fw-light" datetime="2022-08-26">22. 6. 2020</time></p>
+            </div>
+            <p class="m-0 working">Hi everyone, <br> 
+              we have been working hard with the team bringing a new articles. It has passed a few months till we released it in case of traveling and shooting, hopefully you’ll love it.</p>
+          </div>
+          <div class="worry">
+            <div class="img-wrap pb-4 d-flex align-items-start">
+              <img class="me-3" src="./images/worry.png"
+               width="40"
+                height="40"
+                srcset="./images/worry.png 1x, ./images/worry@2x.png 2x"
+              alt="Author">
+              <p class="fw-bold m-0 p-0">User <span class="ms-2 ps-3 pe-3 pt-2 pb-2 bg-light rounded-4">Customer</span> <br> <time class="text-secondary fw-light" datetime="2022-08-26">22. 6. 2020</time></p>
+            </div>
+            <p class="m-0 working">Don’t worry about that, we are happy to read a new stories. The time we had to wait was crazy, but the results are awesome! You did an epic job. Now I just need to a buy one.</p>
+          </div>
+        </div>
+        </div>
+      </div>
+    
+    </div>
+  </section>
+  <section class="related">
+    <div class="container">
+      <div class="flex-blog d-flex justify-content-between align-items-center">
+        <h3 class="m-0 fw-bold">Related topics</h3>
+        <a class="text-decoration-none d-inline-block fw-bold text-black" href="#">Button <span class="fw-bold text-success"> &nbsp;></span></a>
+      </div>
+      <ul class="row list-unstyled m-0 ps-0 justify-content-around">
+        <li class="list col-12 col-lg-6 col-xl-3">
+          <img class="d-block mb-3" src="./images/lunch.png" width="269" height="180"
+              srcset="./images/lunch.png 1x, ./images/lunch@2x.png 2x" alt="lunch image">
+          <span
+              class="text-success bg-light d-inline-block pt-1 pb-1 ps-3 pe-3 mb-2 rounded-5">Tag</span>
+          <p class="fw-bold">Space for your heding is here, write what you need</p>
+          <span>Author &nbsp;&nbsp;15. 6. 2020</span>
+      </li>
+      <li class="list col-12 col-lg-6 col-xl-3">
+        <img class="d-block mb-3" src="./images/ketchup.png" width="269" height="180"
+        srcset="./images/ketchup.png 1x, ./images/ketchup@2x.png 2x" alt="lemon image">
+          <span
+              class="text-success bg-light d-inline-block pt-1 pb-1 ps-3 pe-3 mb-2 rounded-5">Tag</span>
+          <p class="fw-bold">Space for your heding is here, write what you need</p>
+          <span>Author &nbsp;&nbsp;15. 6. 2020</span>
+      </li>
+      <li class="list col-12 col-lg-6 col-xl-3 ">
+          <img class="d-block mb-3" src="./images/bun.png" width="269" height="180"
+              srcset="./images/bun.png 1x, ./images/bun@2x.png 2x" alt="bun image">
+          <span
+              class="text-success bg-light d-inline-block pt-1 pb-1 ps-3 pe-3 mb-2 rounded-5">Tag</span>
+          <p class="fw-bold">Space for your heding is here, write what you need</p>
+          <span>Author &nbsp;&nbsp;15. 6. 2020</span>
+      </li>
+      <li class="list col-12 col-lg-6 col-xl-3 ">
+        <img class="d-block mb-3" src="./images/food.png" width="269" height="180"
+            srcset="./images/food.png 1x, ./images/food@2x.png 2x" alt="food image">
+        <span
+            class="text-success bg-light d-inline-block pt-1 pb-1 ps-3 pe-3 mb-2 rounded-5">Tag</span>
+        <p class="fw-bold">Space for your heding is here, write what you need</p>
+        <span>Author &nbsp;&nbsp;15. 6. 2020</span>
+    </li>
+      </ul>
+    </div>
+  </section>
   </main>
   <!-- MAIN PART END  -->
 
@@ -308,6 +477,191 @@
     </div>
   </footer>
   <!-- FOOTER PART END  -->
+
+
+  <!-- canvas  -->
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header">
+      <h4 class="offcanvas-title" id="offcanvasRightLabel">Shopping cart</h4>
+      <div class="d-flex align-items-center">
+        <span class="canvas-close">close</span>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+    </div>
+    <div class="offcanvas-body">
+      <div class="d-flex flex-column justify-content-between">
+        <div>
+
+          <div class="row mb-5">
+            <div class="col-4">
+              <div class="canvas-box">
+                <div class="canvas-img mb-3"></div>
+                <ul class="list-unstyled">
+                  <li class="mb-2 canvas-list">
+                    Wishlist
+                  </li>
+                  <li class="mb-2 canvas-list">
+                    Compare
+                  </li>
+                  <li class="mb-2 canvas-list">
+                    Remove
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-8 ms-0">
+              <p class="cavas-product-title">
+                Product title
+              </p>
+              <div class="row">
+                <div class="col-5 canvas-item me-0">
+                  Farm:
+                </div>
+                <div class="col-6 canvas-desc ms-2">
+                  Tharamis Farm
+                </div>
+                <div class="row mt-2">
+                  <div class="col-6 canvas-item text-start">
+                    Freshness:
+                  </div>
+                  <div class="col-5 canvas-desc ">
+                    1 day old
+                  </div>
+                </div>
+              </div>
+
+              <div class="canvas-rate">
+                <input type="radio" id="star5" name="rate" value="5" />
+                <label for="star5" title="text">5 stars</label>
+                <input type="radio" id="star4" name="rate" value="4" />
+                <label for="star4" title="text">4 stars</label>
+                <input type="radio" id="star3" name="rate" value="3" />
+                <label for="star3" title="text">3 stars</label>
+                <input type="radio" id="star2" name="rate" value="2" />
+                <label for="star2" title="text">2 stars</label>
+                <input type="radio" id="star1" name="rate" value="1" />
+                <label for="star1" title="text">1 star</label>
+              </div>
+
+              <div class="canvas-space"> cdsadasdasdefedef</div>
+
+              <div class="row mt-3">
+                <div class="col-6">
+                  <ins class="canvas-ins">36.99 USD</ins>
+                  <del class="canvas-del">48.56 USD</del>
+                </div>
+                <div class="col-6 btn  canvas-btn">
+                  <div class="row">
+                    <div class="col-5 p-0 text-start">
+                      <span class="canvas-quantity disabled">1 pcs</span>
+                    </div>
+                    <select class="col-7 text-start canvas-select p-0" name="pieces">
+                      <option value="1" selected>Pcs</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-4">
+              <div class="canvas-box">
+                <div class="canvas-img mb-3"></div>
+                <ul class="list-unstyled">
+                  <li class="mb-2 canvas-list">
+                    Wishlist
+                  </li>
+                  <li class="mb-2 canvas-list">
+                    Compare
+                  </li>
+                  <li class="mb-2 canvas-list">
+                    Remove
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-8 ms-0">
+              <p class="cavas-product-title">
+                Product title
+              </p>
+              <div class="row">
+                <div class="col-5 canvas-item me-0">
+                  Farm:
+                </div>
+                <div class="col-6 canvas-desc ms-2">
+                  Tharamis Farm
+                </div>
+                <div class="row mt-2">
+                  <div class="col-6 canvas-item text-start">
+                    Freshness:
+                  </div>
+                  <div class="col-5 canvas-desc ">
+                    1 day old
+                  </div>
+                </div>
+              </div>
+
+              <div class="canvas-rate">
+                <input type="radio" id="star50" name="rate" value="5" />
+                <label for="star50" title="text">5 stars</label>
+                <input type="radio" id="star40" name="rate" value="4" />
+                <label for="star40" title="text">4 stars</label>
+                <input type="radio" id="star30" name="rate" value="3" />
+                <label for="star30" title="text">3 stars</label>
+                <input type="radio" id="star20" name="rate" value="2" />
+                <label for="star20" title="text">2 stars</label>
+                <input type="radio" id="star10" name="rate" value="1" />
+                <label for="star10" title="text">1 star</label>
+              </div>
+
+              <div class="canvas-space"> cdsadasdasdefedef</div>
+
+              <div class="row mt-3">
+                <div class="col-6">
+                  <ins class="canvas-ins">36.99 USD</ins>
+                  <del class="canvas-del">48.56 USD</del>
+                </div>
+                <div class="col-6 btn  canvas-btn">
+                  <div class="row">
+                    <div class="col-5 p-0 text-start">
+                      <span class="canvas-quantity disabled">1 pcs</span>
+                    </div>
+                    <select class="col-7 text-start canvas-select p-0" name="pieces">
+                      <option value="1" selected>Pcs</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="canvas-footer">
+          <p class="canvas-subtotal mb-0">Subtotal</p>
+          <span class="canvas-total">73.98 USD</span>
+          <div class="canvas-bottom p-2">
+            <div class="row d-flex align-items-center pt-3">
+              <div class="col-6 canvas-shopping">
+                Continue shopping
+              </div>
+              <div class="col-6">
+                <button class="btn canvas-checkout">Go to Checkout</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
   <script src="./js/bootstrap.bundle.min.js"></script>
 </body>
 
