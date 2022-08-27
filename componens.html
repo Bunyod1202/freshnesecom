@@ -57,9 +57,10 @@
           <a class="btn me-5 " href="./contact.html">
             <img src="./images/user.svg" alt="user">
           </a>
-          <button class="btn" type="button">
-            <img src="./images/bascet.svg" alt="bascet">
-          </button>
+          <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+              aria-controls="offcanvasRight">
+              <img src="./images/bascet.svg" alt="bascet">
+            </button>
         </div>
       </div>
     </div>
@@ -308,6 +309,193 @@
     </div>
   </footer>
   <!-- FOOTER PART END  -->
+
+
+  <!-- canvas  -->
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header">
+      <h4 class="offcanvas-title" id="offcanvasRightLabel">Shopping cart</h4>
+      <div class="d-flex align-items-center">
+        <span class="canvas-close">close</span>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+    </div>
+    <div class="offcanvas-body">
+      <div class="d-flex flex-column justify-content-between">
+        <div>
+
+          <div class="row mb-5">
+            <div class="col-4">
+              <div class="canvas-box">
+                <div class="canvas-img mb-3"></div>
+                <ul class="list-unstyled">
+                  <li class="mb-2 canvas-list">
+                    Wishlist
+                  </li>
+                  <li class="mb-2 canvas-list">
+                    Compare
+                  </li>
+                  <li class="mb-2 canvas-list">
+                    Remove
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-8 ms-0">
+              <p class="cavas-product-title">
+                Product title
+              </p>
+              <div class="row">
+                <div class="col-5 canvas-item me-0">
+                  Farm:
+                </div>
+                <div class="col-6 canvas-desc ms-2">
+                  Tharamis Farm
+                </div>
+                <div class="row mt-2">
+                  <div class="col-6 canvas-item text-start">
+                    Freshness:
+                  </div>
+                  <div class="col-5 canvas-desc ">
+                    1 day old
+                  </div>
+                </div>
+              </div>
+
+              <div class="canvas-rate">
+                <input type="radio" id="star5" name="rate" value="5" />
+                <label for="star5" title="text">5 stars</label>
+                <input type="radio" id="star4" name="rate" value="4" />
+                <label for="star4" title="text">4 stars</label>
+                <input type="radio" id="star3" name="rate" value="3" />
+                <label for="star3" title="text">3 stars</label>
+                <input type="radio" id="star2" name="rate" value="2" />
+                <label for="star2" title="text">2 stars</label>
+                <input type="radio" id="star1" name="rate" value="1" />
+                <label for="star1" title="text">1 star</label>
+              </div>
+
+              <div class="canvas-space"> cdsadasdasdefedef</div>
+
+              <div class="row mt-3">
+                <div class="col-6">
+                  <ins class="canvas-ins">36.99 USD</ins>
+                  <del class="canvas-del">48.56 USD</del>
+                </div>
+                <div class="col-6 btn  canvas-btn">
+                  <div class="row">
+                    <div class="col-5 p-0 text-start">
+                      <span class="canvas-quantity disabled">1 pcs</span>
+                    </div>
+                    <select class="col-7 text-start canvas-select p-0" name="pieces">
+                      <option value="1" selected>Pcs</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-4">
+              <div class="canvas-box">
+                <div class="canvas-img mb-3"></div>
+                <ul class="list-unstyled">
+                  <li class="mb-2 canvas-list">
+                    Wishlist
+                  </li>
+                  <li class="mb-2 canvas-list">
+                    Compare
+                  </li>
+                  <li class="mb-2 canvas-list">
+                    Remove
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-8 ms-0">
+              <p class="cavas-product-title">
+                Product title
+              </p>
+              <div class="row">
+                <div class="col-5 canvas-item me-0">
+                  Farm:
+                </div>
+                <div class="col-6 canvas-desc ms-2">
+                  Tharamis Farm
+                </div>
+                <div class="row mt-2">
+                  <div class="col-6 canvas-item text-start">
+                    Freshness:
+                  </div>
+                  <div class="col-5 canvas-desc ">
+                    1 day old
+                  </div>
+                </div>
+              </div>
+
+              <div class="canvas-rate">
+                <input type="radio" id="star50" name="rate" value="5" />
+                <label for="star50" title="text">5 stars</label>
+                <input type="radio" id="star40" name="rate" value="4" />
+                <label for="star40" title="text">4 stars</label>
+                <input type="radio" id="star30" name="rate" value="3" />
+                <label for="star30" title="text">3 stars</label>
+                <input type="radio" id="star20" name="rate" value="2" />
+                <label for="star20" title="text">2 stars</label>
+                <input type="radio" id="star10" name="rate" value="1" />
+                <label for="star10" title="text">1 star</label>
+              </div>
+
+              <div class="canvas-space"> cdsadasdasdefedef</div>
+
+              <div class="row mt-3">
+                <div class="col-6">
+                  <ins class="canvas-ins">36.99 USD</ins>
+                  <del class="canvas-del">48.56 USD</del>
+                </div>
+                <div class="col-6 btn  canvas-btn">
+                  <div class="row">
+                    <div class="col-5 p-0 text-start">
+                      <span class="canvas-quantity disabled">1 pcs</span>
+                    </div>
+                    <select class="col-7 text-start canvas-select p-0" name="pieces">
+                      <option value="1" selected>Pcs</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="canvas-footer">
+          <p class="canvas-subtotal mb-0">Subtotal</p>
+          <span class="canvas-total">73.98 USD</span>
+          <div class="canvas-bottom p-2">
+            <div class="row d-flex align-items-center pt-3">
+              <div class="col-6 canvas-shopping">
+                Continue shopping
+              </div>
+              <div class="col-6">
+                <button class="btn canvas-checkout">Go to Checkout</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
   <script src="./js/bootstrap.bundle.min.js"></script>
 </body>
 
