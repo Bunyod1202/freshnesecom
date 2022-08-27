@@ -526,11 +526,7 @@ body {
     height: auto;
   }
 }
-@media only screen and (max-width: 444px) {
-  .site-header {
-    background-color: red;
-  }
-}
+
 /* home page start */
 .home-hero__topic {
   font-family: "Poppins", "Arial", sans-serif;
@@ -1115,7 +1111,7 @@ body {
 }
 
 .left_box_card {
-  width: 569px;
+  max-width: 569px;
   height: 436px;
   background: #f9f9f9;
   border-radius: 12px;

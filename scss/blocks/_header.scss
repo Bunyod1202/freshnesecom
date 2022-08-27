@@ -114,8 +114,3 @@
     }
   }
 }
-@include desktop-first(444px) {
-  .site-header {
-    background-color: red;
-  }
-}
