@@ -1107,16 +1107,16 @@ body {
 }
 .components-filter .list-card {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 .components-filter .list-card-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  width: 869px;
   border: 1px solid #D1D1D1;
   border-radius: 12px;
+}
+.components-filter .list-card-item:not(:last-child) {
+  margin-bottom: 32px;
 }
 .components-filter .img {
   width: 268px;
@@ -1138,7 +1138,7 @@ body {
   overflow: hidden;
   white-space: nowrap;
   cursor: pointer;
-  font-size: 30px;
+  font-size: 25px;
   color: #ccc;
 }
 .components-filter .rate10:not(:checked) > label:before {
@@ -1160,6 +1160,7 @@ body {
 }
 .components-filter .product-title {
   margin-top: 32px;
+  margin-left: 32px;
 }
 .components-filter .product-content-title {
   font-weight: 600;
@@ -1173,7 +1174,7 @@ body {
   font-size: 12px;
   line-height: 16px;
   color: #575757;
-  margin-bottom: 10px;
+  margin: 0;
 }
 .components-filter .list-contrnt-item,
 .components-filter .list-link-item {
@@ -1189,10 +1190,61 @@ body {
 .components-filter .list-link-item .text-grin {
   color: #6A983C;
 }
+.components-filter .btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.components-filter .btn img {
+  margin-left: 10px;
+}
 .components-filter .btn-hard {
+  margin-top: 12px;
   background-color: #F5F5F5;
   color: #151515;
   border: none;
+}
+.components-filter .btn-hard img {
+  margin-right: 10px;
+  margin-left: 0;
+}
+.components-filter .sum-box {
+  margin-top: 32px;
+  margin-right: 32px;
+  margin-left: auto;
+}
+.components-filter .sum-box-mony {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  color: #151515;
+  margin: 0;
+}
+.components-filter .sum-del {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  color: #A9A9A9;
+  margin-top: -5px;
+  margin-bottom: 25px;
+  display: block;
+}
+.components-filter .box-title-free {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  color: #A9A9A9;
+  margin: 0;
+}
+.components-filter .box-text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #A9A9A9;
+  margin-bottom: 30px;
 }
 
 /* FOOTER PART */
