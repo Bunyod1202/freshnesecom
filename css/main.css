@@ -456,6 +456,36 @@ body {
   -webkit-box-shadow: 0 0 0 0 transparent;
           box-shadow: 0 0 0 0 transparent;
 }
+.site-header .form .search::-webkit-input-placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #A9A9A9;
+}
+.site-header .form .search::-moz-placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #A9A9A9;
+}
+.site-header .form .search:-ms-input-placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #A9A9A9;
+}
+.site-header .form .search::-ms-input-placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #A9A9A9;
+}
+.site-header .form .search::placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #A9A9A9;
+}
 .site-header .form .btn-search {
   border: none;
 }
@@ -504,13 +534,18 @@ body {
   width: auto;
   background-color: transparent;
   border: none;
+  padding-left: 0;
+  padding-right: 30px;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
 }
 .site-header .header-bottom-inner .form-select:focus {
   -webkit-box-shadow: 0 0 0 0 transparent;
           box-shadow: 0 0 0 0 transparent;
 }
 .site-header .header-bottom-inner .form-select:not(:last-child) {
-  margin-right: 10px;
+  margin-right: 25px;
 }
 
 .head_option {
@@ -527,6 +562,28 @@ body {
   }
 }
 
+.components .text-grin {
+  color: #A9A9A9;
+}
+.components .text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+}
+.components .list-item-icon:not(:last-child) {
+  margin-right: 24px;
+}
+.components .list-item-icon:last-child .list-link-icon span {
+  padding: 2px 8px;
+  background: #F4F8EC;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  color: #6A983C;
+}
+.components .list-link-icon {
+
 .contact-hero__label {
   font-family: "Poppins";
   font-weight: 600;
@@ -536,10 +593,155 @@ body {
 }
 
 .contact p {
+
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
   color: #A9A9A9;
+
+  text-decoration: none;
+}
+.components .list-link-icon span {
+  margin-right: 4px;
+}
+.components .list-item-icon--active .list-link-icon {
+  color: #151515;
+}
+.components .list-item-icon--active .list-link-icon svg path {
+  stroke: #6A983C;
+}
+.components .radio-input:checked + .radio-box .radio-check {
+  border: 6px solid #151515;
+}
+.components .radio-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.components .radio-check {
+  width: 20px;
+  height: 20px;
+  border: 1.5px solid #D1D1D1;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 5px;
+}
+.components .radio-filter {
+  padding: 11px 16px;
+  background: #F9F9F9;
+  display: inline-block;
+  height: 42px;
+  /* C1/D */
+  display: inline-block;
+  border: 1px solid #D1D1D1;
+  border-radius: 12px;
+}
+.components .radio-filter .radio-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #151515;
+}
+.components .radio-filter .chack-input:checked + .chack-box .chack-span-box {
+  background-color: #6A983C;
+  border: 1.5px solid #46760A;
+  background-image: url("../images/chack.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.components .radio-filter .chack-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 2px 0;
+}
+.components .radio-filter .chack-box .chack-span-box {
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  border-radius: 5px;
+  border: 1.5px solid #D1D1D1;
+}
+.components .radio-filter .chack-box .chack-span-title {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #151515;
+}
+.components .radio-filter .chack-box .chack-span {
+  margin-left: 8px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  color: #151515;
+  padding: 0px 8px 0px 8px;
+  height: 18px;
+  display: inline-block;
+  border: 1px solid #EBEBEB;
+  border-radius: 12px;
+}
+.components .radio-filter .line {
+  width: 20px;
+  height: 0px;
+  border-bottom: 1px solid #D1D1D1;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+.components .radio-filter .form-select {
+  background-color: transparent;
+  border: none;
+  width: 65px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  color: #151515;
+}
+.components .radio-filter .form-select:focus {
+  -webkit-box-shadow: 0 0 0 0 transparent;
+          box-shadow: 0 0 0 0 transparent;
+}
+.components .selected-title {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  color: #A9A9A9;
+}
+.components .selected {
+  background: #F4F8EC;
+  border-radius: 12px;
+  padding: 1px 10px;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  color: #6A983C;
+}
+.components .selected img {
+  margin-left: 8px;
+}
+
+.components-filter .components-filter-inner {
+  margin-top: 64px;
+}
+.components-filter .filtrs {
+  width: 251px;
+}
+.components-filter .filtrs .filtrs-title {
+
 }
 
 .contact-hero__title {
@@ -598,7 +800,7 @@ body {
 .radio-card {
   padding: 16px;
   background-color: #F9F9F9;
-=======
+
 /* home page start */
 .home-hero__topic {
   font-family: "Poppins", "Arial", sans-serif;
@@ -758,11 +960,38 @@ body {
 
 .headline {
   font-family: "Poppins", "Arial", sans-serif;
+
   font-weight: 600;
   font-size: 18px;
   line-height: 27px;
   color: #151515;
 }
+
+.components-filter .list {
+  width: 268px;
+  padding: 0;
+  margin: 0;
+}
+.components-filter .list-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.components-filter .list-item p {
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #151515;
+}
+.components-filter .list-item .span {
+
 
 .headline-button {
   font-family: "Poppins", "Arial", sans-serif;
@@ -820,10 +1049,110 @@ body {
 .home-blog-before {
   padding: 4px 8px;
   font-family: "Poppins", "Arial", sans-serif;
+
   font-weight: 600;
   font-size: 12px;
   line-height: 18px;
   color: #6A983C;
+
+  background: #F4F8EC;
+  border-radius: 12px;
+  padding: 0 8px;
+  display: inline-block;
+}
+.components-filter .list-item .chack-input:checked + .chack-box .chack-span-box {
+  background-color: #6A983C;
+  border: 1.5px solid #46760A;
+  background-image: url("../images/chack.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.components-filter .list-item .chack-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 2px 0;
+}
+.components-filter .list-item .chack-box .chack-span-box {
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  border-radius: 5px;
+  border: 1.5px solid #D1D1D1;
+}
+.components-filter .list-item .chack-box .chack-span-title {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #151515;
+}
+.components-filter .list-item .chack-box .chack-span {
+  margin-left: 8px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  color: #151515;
+  padding: 0px 8px 0px 8px;
+  height: 18px;
+  display: inline-block;
+  border: 1px solid #EBEBEB;
+  border-radius: 12px;
+}
+.components-filter .list-item:nth-child(1) .rate1 {
+  float: left;
+  padding: 0 10px;
+}
+.components-filter .list-item:nth-child(1) .rate1:not(:checked) > input {
+  position: absolute;
+  top: -9999px;
+}
+.components-filter .list-item:nth-child(1) .rate1:not(:checked) > label {
+  float: right;
+  width: 1em;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+  font-size: 30px;
+  color: #ccc;
+}
+.components-filter .list-item:nth-child(1) .rate:not(:checked) > label:before {
+  content: "★ ";
+}
+.components-filter .list-item:nth-child(1) .rate1 > input:checked ~ label {
+  color: #ffc700;
+}
+.components-filter .list-item:nth-child(1) .rate1:not(:checked) > label:hover,
+.components-filter .list-item:nth-child(1) .rate1:not(:checked) > label:hover ~ label {
+  color: #deb217;
+}
+.components-filter .list-item:nth-child(1) .rate1 > input:checked + label:hover,
+.components-filter .list-item:nth-child(1) .rate1 > input:checked + label:hover ~ label,
+.components-filter .list-item:nth-child(1) .rate1 > input:checked ~ label:hover,
+.components-filter .list-item:nth-child(1) .rate1 > input:checked ~ label:hover ~ label,
+.components-filter .list-item:nth-child(1) .rate1 > label:hover ~ input:checked ~ label {
+  color: #c59b08;
+}
+.components-filter .list-item:nth-child(2) .rate2 {
+  float: left;
+  padding: 0 10px;
+}
+.components-filter .list-item:nth-child(2) .rate2:not(:checked) > input {
+  position: absolute;
+  top: -9999px;
+}
+.components-filter .list-item:nth-child(2) .rate2:not(:checked) > label {
+
   position: absolute;
   top: 24px;
   left: 24px;
@@ -946,6 +1275,7 @@ body {
 }
 
 .canvas-rate:not(:checked) > label {
+
   float: right;
   width: 1em;
   overflow: hidden;
@@ -954,6 +1284,282 @@ body {
   font-size: 30px;
   color: #ccc;
 }
+
+.components-filter .list-item:nth-child(2) .rate2:not(:checked) > label:before {
+  content: "★ ";
+}
+.components-filter .list-item:nth-child(2) .rate2 > input:checked ~ label {
+  color: #ffc700;
+}
+.components-filter .list-item:nth-child(2) .rate2:not(:checked) > label:hover,
+.components-filter .list-item:nth-child(2) .rate2:not(:checked) > label:hover ~ label {
+  color: #deb217;
+}
+.components-filter .list-item:nth-child(2) .rate2 > input:checked + label:hover,
+.components-filter .list-item:nth-child(2) .rate2 > input:checked + label:hover ~ label,
+.components-filter .list-item:nth-child(2) .rate2 > input:checked ~ label:hover,
+.components-filter .list-item:nth-child(2) .rate2 > input:checked ~ label:hover ~ label,
+.components-filter .list-item:nth-child(2) .rate2 > label:hover ~ input:checked ~ label {
+  color: #c59b08;
+}
+.components-filter .list-item:nth-child(3) .rate3 {
+  float: left;
+  padding: 0 10px;
+}
+.components-filter .list-item:nth-child(3) .rate3:not(:checked) > input {
+  position: absolute;
+  top: -9999px;
+}
+.components-filter .list-item:nth-child(3) .rate3:not(:checked) > label {
+  float: right;
+  width: 1em;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+  font-size: 30px;
+  color: #ccc;
+}
+.components-filter .list-item:nth-child(3) .rate3:not(:checked) > label:before {
+  content: "★ ";
+}
+.components-filter .list-item:nth-child(3) .rate3 > input:checked ~ label {
+  color: #ffc700;
+}
+.components-filter .list-item:nth-child(3) .rate3:not(:checked) > label:hover,
+.components-filter .list-item:nth-child(3) .rate3:not(:checked) > label:hover ~ label {
+  color: #deb217;
+}
+.components-filter .list-item:nth-child(3) .rate3 > input:checked + label:hover,
+.components-filter .list-item:nth-child(3) .rate3 > input:checked + label:hover ~ label,
+.components-filter .list-item:nth-child(3) .rate3 > input:checked ~ label:hover,
+.components-filter .list-item:nth-child(3) .rate3 > input:checked ~ label:hover ~ label,
+.components-filter .list-item:nth-child(3) .rate3 > label:hover ~ input:checked ~ label {
+  color: #c59b08;
+}
+.components-filter .list-item:nth-child(4) .rate {
+  float: left;
+  padding: 0 10px;
+}
+.components-filter .list-item:nth-child(4) .rate:not(:checked) > input {
+  position: absolute;
+  top: -9999px;
+}
+.components-filter .list-item:nth-child(4) .rate:not(:checked) > label {
+  float: right;
+  width: 1em;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+  font-size: 30px;
+  color: #ccc;
+}
+.components-filter .list-item:nth-child(4) .rate:not(:checked) > label:before {
+  content: "★ ";
+}
+.components-filter .list-item:nth-child(4) .rate > input:checked ~ label {
+  color: #ffc700;
+}
+.components-filter .list-item:nth-child(4) .rate:not(:checked) > label:hover,
+.components-filter .list-item:nth-child(4) .rate:not(:checked) > label:hover ~ label {
+  color: #deb217;
+}
+.components-filter .list-item:nth-child(4) .rate > input:checked + label:hover,
+.components-filter .list-item:nth-child(4) .rate > input:checked + label:hover ~ label,
+.components-filter .list-item:nth-child(4) .rate > input:checked ~ label:hover,
+.components-filter .list-item:nth-child(4) .rate > input:checked ~ label:hover ~ label,
+.components-filter .list-item:nth-child(4) .rate > label:hover ~ input:checked ~ label {
+  color: #c59b08;
+}
+.components-filter .list-item:nth-child(5) .rate {
+  float: left;
+  padding: 0 10px;
+}
+.components-filter .list-item:nth-child(5) .rate:not(:checked) > input {
+  position: absolute;
+  top: -9999px;
+}
+.components-filter .list-item:nth-child(5) .rate:not(:checked) > label {
+  float: right;
+  width: 1em;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+  font-size: 30px;
+  color: #ccc;
+}
+.components-filter .list-item:nth-child(5) .rate:not(:checked) > label:before {
+  content: "★ ";
+}
+.components-filter .list-item:nth-child(5) .rate > input:checked ~ label {
+  color: #ffc700;
+}
+.components-filter .list-item:nth-child(5) .rate:not(:checked) > label:hover,
+.components-filter .list-item:nth-child(5) .rate:not(:checked) > label:hover ~ label {
+  color: #deb217;
+}
+.components-filter .list-item:nth-child(5) .rate > input:checked + label:hover,
+.components-filter .list-item:nth-child(5) .rate > input:checked + label:hover ~ label,
+.components-filter .list-item:nth-child(5) .rate > input:checked ~ label:hover,
+.components-filter .list-item:nth-child(5) .rate > input:checked ~ label:hover ~ label,
+.components-filter .list-item:nth-child(5) .rate > label:hover ~ input:checked ~ label {
+  color: #c59b08;
+}
+.components-filter .list-item:not(:last-child) {
+  margin-bottom: 12px;
+}
+.components-filter .wrapper {
+  width: 251px;
+}
+.components-filter .containers {
+  position: relative;
+  width: 100%;
+  height: 50px;
+}
+.components-filter input[type=range] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 100%;
+  outline: none;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  background-color: transparent;
+  pointer-events: none;
+}
+.components-filter .slider-track {
+  width: 100%;
+  height: 6px;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  border-radius: 5px;
+}
+.components-filter input[type=range]::-webkit-slider-runnable-track {
+  -webkit-appearance: none;
+  height: 6px;
+}
+.components-filter input[type=range]::-moz-range-track {
+  -moz-appearance: none;
+  height: 6px;
+}
+.components-filter input[type=range]::-ms-track {
+  appearance: none;
+  height: 6px;
+}
+.components-filter input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 1.7em;
+  width: 1.7em;
+  background-color: #fff;
+  border: 1px solid #D1D1D1;
+  -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  margin-top: -9px;
+  pointer-events: auto;
+  border-radius: 50%;
+}
+.components-filter input[type=range]::-moz-range-thumb {
+  -webkit-appearance: none;
+  height: 1.7em;
+  width: 1.7em;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: #6A983C;
+  pointer-events: auto;
+}
+.components-filter input[type=range]::-ms-thumb {
+  appearance: none;
+  height: 1.7em;
+  width: 1.7em;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: #6A983C;
+  pointer-events: auto;
+}
+.components-filter input[type=range]:active::-webkit-slider-thumb {
+  background-color: #ffffff;
+  border: 3px solid #6A983C;
+}
+.components-filter #range1,
+.components-filter #range2 {
+  width: 109px;
+  display: inline-block;
+  padding: 11px 21px;
+  background: #F9F9F9;
+  background: #F9F9F9;
+  border: 1px solid #D1D1D1;
+  border-radius: 12px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #A9A9A9;
+}
+.components-filter #range1 {
+  margin-right: 9px;
+}
+.components-filter #range2 {
+  margin-left: 9px;
+}
+.components-filter .span-max {
+  margin-left: 115px;
+}
+.components-filter .span-max,
+.components-filter .span-min {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  color: #151515;
+}
+.components-filter .btn {
+  background-color: #6A983C;
+  border: 2px solid #46760A;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 22px;
+  color: #FFFFFF;
+}
+.components-filter .btn-Reset {
+  background-color: transparent;
+  border: 2px solid transparent;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 22px;
+  color: #A9A9A9;
+}
+.components-filter .list-card {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.components-filter .list-card-item {
+  width: 869px;
+  border: 1px solid #D1D1D1;
+  border-radius: 12px;
+}
+.components-filter .list-card-item:not(:last-child) {
+  margin-bottom: 32px;
+}
+.components-filter .img {
+  width: 268px;
+  height: 280px;
+  background: #F9F9F9;
+  border-radius: 12px;
+}
+.components-filter .rate10 {
+  float: left;
+  padding: 0 10px;
+}
+.components-filter .rate10:not(:checked) > input {
+  position: absolute;
+  top: -9999px;
+}
+.components-filter .rate10:not(:checked) > label {
+
 
 .canvas-rate:not(:checked) > label:before {
   content: "★ ";
@@ -1196,7 +1802,7 @@ body {
   color: #FDBC15;
 }
 
-=======
+
 /* CAROUSEL  */
 .owl-prev,
 .owl-next {
@@ -1338,11 +1944,67 @@ body {
 }
 
 .right_box_rate:not(:checked) > label {
+
   float: right;
   width: 1em;
   overflow: hidden;
   white-space: nowrap;
   cursor: pointer;
+
+  font-size: 25px;
+  color: #ccc;
+}
+.components-filter .rate10:not(:checked) > label:before {
+  content: "★ ";
+}
+.components-filter .rate10 > input:checked ~ label {
+  color: #000;
+}
+.components-filter .rate10:not(:checked) > label:hover,
+.components-filter .rate10:not(:checked) > label:hover ~ label {
+  color: #000;
+}
+.components-filter .rate10 > input:checked + label:hover,
+.components-filter .rate10 > input:checked + label:hover ~ label,
+.components-filter .rate01 > input:checked ~ label:hover,
+.components-filter .rate10 > input:checked ~ label:hover ~ label,
+.components-filter .rate10 > label:hover ~ input:checked ~ label {
+  color: #000;
+}
+.components-filter .product-title {
+  margin-top: 32px;
+  margin-left: 32px;
+}
+.components-filter .product-content-title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  color: #151515;
+  margin-bottom: 4px;
+}
+.components-filter .product-content-text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #575757;
+  margin: 0;
+}
+.components-filter .list-contrnt-item,
+.components-filter .list-link-item {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #A9A9A9;
+}
+.components-filter .list-contrnt-item:not(:last-child),
+.components-filter .list-link-item:not(:last-child) {
+  margin-bottom: 14px;
+}
+.components-filter .list-link-item .text-grin {
+  color: #6A983C;
+}
+.components-filter .btn {
+
   font-size: 30px;
   color: #ccc;
 }
@@ -1456,12 +2118,35 @@ body {
 
 .mark_item {
   position: relative;
+
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+
+}
+.components-filter .btn img {
+  margin-left: 10px;
+}
+.components-filter .btn-hard {
+  margin-top: 12px;
+  background-color: #F5F5F5;
+  color: #151515;
+  border: none;
+}
+.components-filter .btn-hard img {
+  margin-right: 10px;
+  margin-left: 0;
+}
+.components-filter .sum-box {
+  margin-top: 32px;
+  margin-right: 32px;
+  margin-left: auto;
+}
+.components-filter .sum-box-mony {
+
   padding-left: 25px;
   font-family: "Poppins", "Arial", sans-serif;
   font-weight: 700;
@@ -1577,10 +2262,39 @@ body {
 
 .products_title {
   font-family: "Poppins", "Arial", sans-serif;
+
   font-weight: 600;
   font-size: 18px;
   line-height: 27px;
   color: #151515;
+
+  margin: 0;
+}
+.components-filter .sum-del {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  color: #A9A9A9;
+  margin-top: -5px;
+  margin-bottom: 25px;
+  display: block;
+}
+.components-filter .box-title-free {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  color: #A9A9A9;
+  margin: 0;
+}
+.components-filter .box-text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #A9A9A9;
+  margin-bottom: 30px;
+}
+
+=======
 }
 
 .products_select {
@@ -1993,6 +2707,7 @@ body {
 }
 
 /*Blogdetail scss Finish */
+
 /* FOOTER PART */
 .site-footer {
   padding: 64px 0;
