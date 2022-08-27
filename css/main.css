@@ -526,11 +526,6 @@ body {
     height: auto;
   }
 }
-@media only screen and (max-width: 444px) {
-  .site-header {
-    background-color: red;
-  }
-}
 .breadcrumb_link {
   font-weight: 400;
   font-size: 12px;
