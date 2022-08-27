@@ -1,0 +1,247 @@
+.contact-hero__label
+{
+  font-family: 'Poppins';
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  color: #151515;
+}
+
+.contact
+{
+  p
+  {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #A9A9A9;
+  }  
+}
+
+.contact-hero__title
+{
+  font-family: 'Poppins';
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 33px;
+  color: #151515;
+}
+
+.contact-hero__input
+{
+  padding: 11px 16px 12px 21px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  background-color: #F9F9F9;
+  border: 1px solid #D1D1D1;
+  border-radius: 12px;
+
+}
+
+.ship
+{
+  margin-bottom: 62px;
+  width: 250px;
+  display: inline-block;
+  margin-left: 12px;
+  padding: 11px 16px 11px 48px;
+  background: #F9F9F9;
+  border: 1px solid #D1D1D1;
+  border-radius: 12px;
+  label{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+  }
+}
+
+.contact
+{
+  .radio-text 
+  {
+    margin: 0;
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    color: #151515;
+  }
+}
+
+
+.form-check-input:checked,
+.form-check-input:focus
+{
+  background-color: #6A983C;
+  border-color: #6A983C;
+}
+
+.radey-start
+{
+  width: 100%;
+}
+
+.radio-card
+{
+  padding: 16px;
+  background-color: #F9F9F9;
+  border: 1px solid #D1D1D1;
+  border-radius: 12px;
+}
+
+.radio-center-text  
+{
+  display: flex;
+  &:before
+  {
+    display: block;
+    content: "+32 USD";
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    color: #6A983C;
+    margin-right: 12px;
+  }
+}
+
+.radio-center-text--second
+{
+  &::before
+  {
+    content: "+15 USD";
+  }
+}
+
+
+.visa__box
+{
+  display: non
+}
+
+.visa:checked .visa__box
+{
+  display: block;
+}
+
+.radio-card-last
+{
+  padding: 11px 16px;
+}
+
+.last-a-stile
+{
+  font-size: 14px;
+  line-height: 19px;
+  text-decoration-line: underline;
+  color: #151515;
+}
+
+.contact__btn
+{
+  display: inline-block;
+  padding: 16px 48px;
+  font-family: 'Poppins';
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 22px;
+  text-align: right;
+  color: #FFFFFF;
+  background: #6A983C;
+  border: 2px solid #46760A;
+  border-radius: 12px;
+}
+
+.radio-text-last
+{
+  width: 180px;
+  font-family: 'Open Sans';
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #A9A9A9;
+}
+
+.contact-footer
+{
+  padding: 64px 0;
+}
+
+.contact-footer__text
+{
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #151515;
+}
+
+.promo-input
+{
+  position: relative;
+
+  &::before
+  {
+    position: absolute;
+    content: "Apply now";
+    right: 16px;
+    top: 11px;
+    z-index: 9;
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 22px;
+    color: #151515;
+  }
+}
+
+
+
+
+
+.contact
+{
+  .radio-text-gren
+  {
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 39px;
+    text-align: right;
+    color: #6A983C;
+  }
+  .contact-order--text
+  {
+    font-size: 12px;
+    line-height: 16px;
+    color: #6A983C;
+  }
+}
+.contact
+{
+  .canvas-rate>input:checked~label {
+    color:#FDBC15;
+  }
+  
+  .canvas-rate:not(:checked)>label:hover,
+  .canvas-rate:not(:checked)>label:hover~label {
+    color:#FDBC15;
+  }
+  
+  .canvas-rate>input:checked+label:hover,
+  .rate>input:checked+label:hover~label,
+  .rate>input:checked~label:hover,
+  .rate>input:checked~label:hover~label,
+  .rate>label:hover~input:checked~label {
+    color:#FDBC15;
+  }
+
+}
+
+
+
+
+
+
