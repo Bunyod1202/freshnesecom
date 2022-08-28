@@ -247,118 +247,130 @@
           </div>
           
           
-          <!-- 
-            <div class="radio-card paypal mb-3">
-              <label class="d-flex align-items-center">
-                <input class=" col-1 form-check-input me-3 mt-0 visa" type="radio" name="payment_methot" value="dhl" required>
-                <span class="radey-start d-flex justify-content-between">
-                  <span class="radio-text" >
+          
+            <div class=" p-0 paypal d-flex align-items-center mb-3">
+              <label class="w-100 radio-card" >
+                <input class=" col-1 form-check-input me-3 mt-0 visa visually-hidden" type="radio" name="payment_methot" value="dhl" required>
+               <span class="input-boxs ">
+                 <span class="radey-start d-flex  w-100  justify-content-between">
+                   <span class="radio-text" >
+                    <span class="inpud-radius"></span>
                     Credit card
                   </span>
                   <img src="./images/Frame 105-visa-svg.svg" alt="">
                 </span>
+                <span class="visa__box ">
+                  <span class="row d-flex justify-content-between mx-0 mt-3">
+                    
+                    <label class="contact-hero__label mb-3 p-0">
+                      Card number
+                      <input type="text" class="contact-hero__input form-control" name="Card number" placeholder="Card number" min="16" aria-label="Choose a state or Country" >
+                    </label>
+                    
+                    <label class="contact-hero__label col-lg-6 mb-3 p-0">
+                      Card holder
+                      <input type="text" class="contact-hero__input form-control" name="Card holder" placeholder="Card number" min="16" aria-label="Card holder" >
+                    </label>
+                    
+                    <label class="contact-hero__label col-lg-2 mb-3 p-0">
+                      Expiration date
+                      <input type="date" class="contact-hero__input form-control" name="Card number" placeholder="Card number" min="16" aria-label="Expiration date ">
+                    </label>
+                    
+                    <label class="contact-hero__label col-lg-2 mb-3 p-0">
+                      CVC
+                      <input type="text" class="contact-hero__input form-control" name="CVC" placeholder="CVC" min="16" aria-label="CVC" >
+                    </label>
+                  </span>
+                  
+                </span>
+               </span>
               </label>
-              <div class="visa__box ">
-                <div class="row d-flex justify-content-between mx-0 mt-3">
-                  
-                  <label class="contact-hero__label mb-3 p-0">
-                    Card number
-                    <input type="text" class="contact-hero__input form-control" name="Card number" placeholder="Card number" min="16" aria-label="Choose a state or Country" required>
-                  </label>
-                  
-                  <label class="contact-hero__label col-lg-6 mb-3 p-0">
-                    Card holder
-                    <input type="text" class="contact-hero__input form-control" name="Card holder" placeholder="Card number" min="16" aria-label="Card holder" required>
-                  </label>
-                  
-                  <label class="contact-hero__label col-lg-2 mb-3 p-0">
-                    Expiration date
-                    <input type="date" class="contact-hero__input form-control" name="Card number" placeholder="Card number" min="16" aria-label="Expiration date required">
-                  </label>
-                  
-                  <label class="contact-hero__label col-lg-2 mb-3 p-0">
-                    CVC
-                    <input type="text" class="contact-hero__input form-control" name="CVC" placeholder="CVC" min="16" aria-label="CVC" required>
-                  </label>
-                </div>
-                
-              </div>
+           
             </div>
             
-            <div class="radio-card paypal mb-3">
-              <label class="d-flex align-items-center">
-                <input class=" col-1 form-check-input me-3 mt-0 " type="radio" name="payment_methot" value="dhl" required>
-                <span class="radey-start d-flex justify-content-between">
-                  <span class="radio-text" >
-                    PayPal
+            <div class=" p-0 paypal d-flex align-items-center mb-3">
+              <label class="w-100 radio-card">
+                <input class=" col-1 form-check-input me-3 mt-0 visually-hidden" type="radio" name="payment_methot" value="dhl" >
+                <span class="input-boxs">
+                  <span class="radey-start d-flex justify-content-between">
+                    <span class="radio-text" >
+                      <span class="inpud-radius"></span>
+                      PayPal
+                    </span>
+                    <img src="./images/PayPal.svg" alt="">
                   </span>
-                  <img src="./images/PayPal.svg" alt="">
+                  <span class="visa__box ">
+                    <span class="row d-flex justify-content-between mx-0 mt-3">
+                      
+                      <label class="contact-hero__label mb-3 p-0">
+                        Card number
+                        <input type="text" class="contact-hero__input form-control" name="Card number" placeholder="Card number" min="16" aria-label="Choose a state or Country" >
+                      </label>
+                      
+                      <label class="contact-hero__label col-lg-6 mb-3 p-0">
+                        Card holder
+                        <input type="text" class="contact-hero__input form-control" name="Card holder" placeholder="Card number" min="16" aria-label="Card holder" >
+                      </label>
+                      
+                      <label class="contact-hero__label col-lg-2 mb-3 p-0">
+                        Expiration date
+                        <input type="date" class="contact-hero__input form-control" name="Card number" placeholder="Card number" min="16" aria-label="Expiration date ">
+                      </label>
+                      
+                      <label class="contact-hero__label col-lg-2 mb-3 p-0">
+                        CVC
+                        <input type="text" class="contact-hero__input form-control" name="CVC" placeholder="CVC" min="16" aria-label="CVC" >
+                      </label>
+                    </span>
+                    
+                  </span>
                 </span>
               </label>
-              <div class="paypal__box d-none">
-                <div class="row d-flex justify-content-between mx-0 mt-3">
-                  
-                  <label class="contact-hero__label mb-3 p-0">
-                    Card number
-                    <input type="text" class="contact-hero__input form-control" name="Card number" placeholder="Card number" min="16" aria-label="Choose a state or Country" required>
-                  </label>
-                  
-                  <label class="contact-hero__label col-lg-6 mb-3 p-0">
-                    Card holder
-                    <input type="text" class="contact-hero__input form-control" name="Card holder" placeholder="Card number" min="16" aria-label="Card holder" required>
-                  </label>
-                  
-                  <label class="contact-hero__label col-lg-2 mb-3 p-0">
-                    Expiration date
-                    <input type="date" class="contact-hero__input form-control" name="Card number" placeholder="Card number" min="16" aria-label="Expiration date required">
-                  </label>
-                  
-                  <label class="contact-hero__label col-lg-2 mb-3 p-0">
-                    CVC
-                    <input type="text" class="contact-hero__input form-control" name="CVC" placeholder="CVC" min="16" aria-label="CVC" required>
-                  </label>
-                </div>
-                
-              </div>
+              
             </div>
             
-            <div class="radio-card paypal mb-3">
-              <label class="d-flex align-items-center">
-                <input class=" col-1 form-check-input me-3 mt-0 " type="radio" name="payment_methot" value="dhl" required>
+            <div class=" p-0 paypal mb-3">
+              <label class="w-100 radio-card">
+                <input class=" col-1 form-check-input me-3 mt-0 visually-hidden" type="radio" name="payment_methot" value="dhl" required>
+               <span class="input-boxs">
                 <span class="radey-start d-flex justify-content-between">
                   <span class="radio-text" >
+                    <span class="inpud-radius"></span>
                     Bitcoin
                   </span>
                   <img src="./images/Group-bitcoin.svg" alt="">
                 </span>
+                <span class="visa__box">
+                  <span class="row d-flex justify-content-between mx-0 mt-3">
+                    
+                    <label class="contact-hero__label mb-3 p-0">
+                      Card number
+                      <input type="text" class="contact-hero__input form-control" name="Card number" placeholder="Card number" min="16" aria-label="Choose a state or Country" >
+                    </label>
+                    
+                    <label class="contact-hero__label col-lg-6 mb-3 p-0">
+                      Card holder
+                      <input type="text" class="contact-hero__input form-control" name="Card holder" placeholder="Card number" min="16" aria-label="Card holder" >
+                    </label>
+                    
+                    <label class="contact-hero__label col-lg-2 mb-3 p-0">
+                      Expiration date
+                      <input type="date" class="contact-hero__input form-control" name="Card number" placeholder="Card number" min="16" aria-label="Expiration date ">
+                    </label>
+                    
+                    <label class="contact-hero__label col-lg-2 mb-3 p-0">
+                      CVC
+                      <input type="text" class="contact-hero__input form-control" name="CVC" placeholder="CVC" min="16" aria-label="CVC" >
+                    </label>
+                  </span>
+                  
+                </span>
+               </span>
               </label>
-              <div class="bitcoin__box d-none">
-                <div class="row d-flex justify-content-between mx-0 mt-3">
-                  
-                  <label class="contact-hero__label mb-3 p-0">
-                    Card number
-                    <input type="text" class="contact-hero__input form-control" name="Card number" placeholder="Card number" min="16" aria-label="Choose a state or Country" required>
-                  </label>
-                  
-                  <label class="contact-hero__label col-lg-6 mb-3 p-0">
-                    Card holder
-                    <input type="text" class="contact-hero__input form-control" name="Card holder" placeholder="Card number" min="16" aria-label="Card holder" required>
-                  </label>
-                  
-                  <label class="contact-hero__label col-lg-2 mb-3 p-0">
-                    Expiration date
-                    <input type="date" class="contact-hero__input form-control" name="Card number" placeholder="Card number" min="16" aria-label="Expiration date required">
-                  </label>
-                  
-                  <label class="contact-hero__label col-lg-2 mb-3 p-0">
-                    CVC
-                    <input type="text" class="contact-hero__input form-control" name="CVC" placeholder="CVC" min="16" aria-label="CVC" required>
-                  </label>
-                </div>
-                
-              </div>
+            
             </div>
-          -->
+         
           
           <h2 class="contact-hero__title mt-5">
             Additional informations
