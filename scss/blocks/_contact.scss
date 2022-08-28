@@ -1,3 +1,29 @@
+/* CONTACT PAGE SCSS TART */
+
+.breadcrumb{
+padding-top: 15px;
+}
+.breadcrumb-link{
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #A9A9A9;
+  text-decoration: none;
+}
+
+.breadcrumb__link-active{
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #151515;
+  text-decoration: none;
+}
+
+
 .contact-hero__label
 {
   font-family: 'Poppins';

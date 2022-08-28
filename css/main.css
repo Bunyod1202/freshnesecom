@@ -609,6 +609,17 @@ body {
   }
 }
 
+.search {
+  border: transparent;
+  background-color: transparent;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #A9A9A9;
+}
+
 /* home page start */
 .home-hero__topic {
   font-family: "Poppins", "Arial", sans-serif;
@@ -2246,6 +2257,31 @@ body {
   background: #6a983c;
   border: 2px solid #46760a;
   border-radius: 12px;
+}
+
+/* CONTACT PAGE SCSS TART */
+.breadcrumb {
+  padding-top: 15px;
+}
+
+.breadcrumb-link {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #A9A9A9;
+  text-decoration: none;
+}
+
+.breadcrumb__link-active {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #151515;
+  text-decoration: none;
 }
 
 .contact-hero__label {
