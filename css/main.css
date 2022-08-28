@@ -2304,6 +2304,12 @@ body {
   font-size: 12px;
   line-height: 18px;
   color: #151515;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .form-check-input:checked,
@@ -2347,7 +2353,11 @@ body {
   display: none;
 }
 
-.visa:checked .visa__box {
+.form-check-input:checked + .input-boxs .inpud-radius {
+  border: 6px solid #46760A;
+}
+
+.form-check-input:checked + .input-boxs .visa__box {
   display: block;
 }
 
@@ -2442,6 +2452,15 @@ body {
 .contact .rate > input:checked ~ label:hover ~ label,
 .contact .rate > label:hover ~ input:checked ~ label {
   color: #FDBC15;
+}
+.contact .inpud-radius {
+  display: block;
+  margin-right: 20px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #FFFFFF;
+  border: 1.5px solid #D1D1D1;
 }
 
 /*Blog scss Start */
