@@ -164,6 +164,18 @@ color: #6A983C;
   .components-filter-inner {
     margin-top: 64px;
   }
+  .sliders {
+    display:none;
+  }
+  .sliders-active {
+    display: block;
+  }
+  .btn-success {
+    width: 214px;
+  }
+  .drop-arrow {
+    transform: rotate(90deg);
+  }
   .filtrs {
     width: 251px;
     .filtrs-title {
@@ -696,4 +708,12 @@ line-height: 16px;
 color: #A9A9A9;
 margin-bottom: 30px;
 }
+}
+@media only screen and (max-width:992px) {
+  .components-filter {
+    .list-card-item {
+      padding: 32px;
+      width: auto;
+    }
+  }
 }
