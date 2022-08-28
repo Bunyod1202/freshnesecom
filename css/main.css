@@ -382,6 +382,10 @@ body {
           flex-grow: 1;
 }
 
+.offcanvas.show:not(.hiding), .offcanvas.showing {
+  width: 400px !important;
+}
+
 /* VISUALLY-HIDDEN */
 .visually-hidden {
   position: absolute;
@@ -946,7 +950,6 @@ body {
 }
 
 .canvas-rate {
-  margin-top: 10px;
   float: left;
   height: 46px;
   padding: 0 10px;

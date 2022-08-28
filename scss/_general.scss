@@ -33,3 +33,6 @@ body{
 .site-main{
   flex-grow: 1;
 }
+.offcanvas.show:not(.hiding), .offcanvas.showing {
+  width: 400px !important;
+}
