@@ -607,12 +607,12 @@ body {
   line-height: 22px;
   color: #151515;
 }
+
 @media only screen and (max-width: 575px) {
-  .site-header .header-bottom-inner .form-select .site-header .form {
-    height: auto;
+  .form {
+    height: auto !important;
   }
 }
-
 .search {
   border: transparent;
   background-color: transparent;
